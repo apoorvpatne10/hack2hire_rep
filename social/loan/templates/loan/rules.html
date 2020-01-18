@@ -11,8 +11,9 @@
 
 		<div class="w3-bar w3-dark-gray w3-large">
 			<a href="#" class="w3-bar-item w3-teal w3-hover-light-green w3-button">DBS</a>
-			<a href="customer.html" class="w3-bar-item w3-button">Customer</a>
-			<a href="ruleScreenManager.html" class="w3-bar-item w3-button">Manager</a>
+			<a href="" class="w3-bar-item w3-button">Customer</a>
+			<a href="{% url 'display_rules' %}" class="w3-bar-item w3-button">Manager</a>
+			<a href="{% url 'rules' my_rule.id %}" class="w3-bar-item w3-button">Change Rule</a>
 		</div>
 
 	    <div class="w3-container w3-display-middle" >

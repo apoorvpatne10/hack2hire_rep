@@ -14,7 +14,7 @@
 			<a href="#" class="w3-bar-item w3-teal w3-hover-light-green w3-button">DBS</a>
 			<a href="" class="w3-bar-item w3-button">Customer</a>
 			<a href="" class="w3-bar-item w3-button">Manager</a>
-			<a href="{% url 'rules' my_rule.id %}" class="w3-bar-item w3-button">Change Rule</a>            
+			<a href="{% url 'rules' my_rule.id %}" class="w3-bar-item w3-button">Change Rule</a>
 		</div>
 
     <div class="w3-container w3-display-middle" >
@@ -32,9 +32,7 @@
           <td>></td>
           <td>{{ my_rule.utility_bills }}</td>
           <td>{{ my_rule.utility_bills_value }}</td>
-          <td>{{ my_rule.utility_bills_weight }}</td>
-          <!-- <td><input type="text" placeholder="enter value" name = ""/></td>
-          <td><input type="text" name = "" placeholder="enter weight"/></td> -->
+          <td>{{ my_rule.utility_bills_weight }}</td>          
         </tr>
 		<tr style='cursor:pointer'>
             <td>2</td>

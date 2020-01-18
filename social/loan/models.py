@@ -2,13 +2,24 @@ from django.db import models
 
 
 class User(models.Model):
-    # s_no = models.IntegerField(default=2)
     name = models.CharField(max_length=150)
     item = models.CharField(max_length=150)
     value = models.IntegerField()
 
     def __str__(self):
         return self.name
+
+
+class MyUser(models.Model):
+    uid = models.IntegerField()
+    uname = models.CharField(max_length=150)
+    score = models.FloatField()
+    email = models.EmailField(default='abc@gmail.com')
+    approved = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.uname
+
 
 
 class Rule(models.Model):

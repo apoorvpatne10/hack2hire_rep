@@ -10,3 +10,7 @@ class RulesForm(forms.ModelForm):
                   'charges_electric', 'charges_electric_value', 'charges_electric_weight',
                   'penalty_tax', 'penalty_tax_value', 'penalty_tax_weight',
                   'threshold', 'threshold_value', 'threshold_weight']
+
+
+class UIDForm(forms.Form):
+    uid = forms.IntegerField(label='Your UID')
