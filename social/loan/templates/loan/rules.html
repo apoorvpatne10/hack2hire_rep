@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+
+	<html>
+	<head>
+		<title>User Login</title>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	</head>
+
+	<body>
+
+		<div class="w3-bar w3-dark-gray w3-large">
+			<a href="#" class="w3-bar-item w3-teal w3-hover-light-green w3-button">DBS</a>
+			<a href="customer.html" class="w3-bar-item w3-button">Customer</a>
+			<a href="ruleScreenManager.html" class="w3-bar-item w3-button">Manager</a>
+		</div>
+
+	    <div class="w3-container w3-display-middle" >
+			<form class="" method="post">
+				{% csrf_token %}
+				{{ my_form.as_p }}
+				<input type="submit" value="create">
+			</form>
+		</div>
+
+	</body>
+</html>

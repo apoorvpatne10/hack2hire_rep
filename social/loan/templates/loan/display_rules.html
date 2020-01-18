@@ -1,0 +1,73 @@
+
+
+<!DOCTYPE html>
+
+	<html>
+	<head>
+		<title>User Login</title>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	</head>
+
+	<body>
+
+		<div class="w3-bar w3-dark-gray w3-large">
+			<a href="#" class="w3-bar-item w3-teal w3-hover-light-green w3-button">DBS</a>
+			<a href="" class="w3-bar-item w3-button">Customer</a>
+			<a href="" class="w3-bar-item w3-button">Manager</a>
+			<a href="{% url 'rules' my_rule.id %}" class="w3-bar-item w3-button">Change Rule</a>            
+		</div>
+
+    <div class="w3-container w3-display-middle" >
+    <table class="w3-table-all w3-hoverable">
+      <thead>
+        <tr class="w3-theme-d1">
+          <th>Sno</th>
+          <th>Operation</th>
+          <th>Rule</th>
+          <th>Value</th>
+          <th>Weight</th>
+        </tr>
+        <tr style='cursor:pointer'>
+          <td>1</td>
+          <td>></td>
+          <td>{{ my_rule.utility_bills }}</td>
+          <td>{{ my_rule.utility_bills_value }}</td>
+          <td>{{ my_rule.utility_bills_weight }}</td>
+          <!-- <td><input type="text" placeholder="enter value" name = ""/></td>
+          <td><input type="text" name = "" placeholder="enter weight"/></td> -->
+        </tr>
+		<tr style='cursor:pointer'>
+            <td>2</td>
+            <td>></td>
+            <td>{{ my_rule.traffic_challan }}</td>
+            <td>{{ my_rule.traffic_challan_value }}</td>
+            <td>{{ my_rule.traffic_challan_weight }}</td>
+        </tr>
+		<tr style='cursor:pointer'>
+            <td>3</td>
+            <td>></td>
+            <td>{{ my_rule.charges_electric }}</td>
+            <td>{{ my_rule.charges_electric_value }}</td>
+            <td>{{ my_rule.charges_electric_weight }}</td>
+        </tr>
+		<tr style='cursor:pointer'>
+            <td>4</td>
+            <td>></td>
+            <td>{{ my_rule.penalty_tax }}</td>
+            <td>{{ my_rule.penalty_tax_value }}</td>
+            <td>{{ my_rule.penalty_tax_weight }}</td>
+        </tr>
+		<tr style='cursor:pointer'>
+            <td>5</td>
+            <td>=</td>
+            <td>{{ my_rule.threshold }}</td>
+            <td>{{ my_rule.threshold_value }}</td>
+            <td>{{ my_rule.threshold_weight }}</td>
+        </tr>
+      </thead>
+    </table>
+		<!-- <p>
+			<button type="submit" class="w3-btn w3-green">SAVE</button>
+		</p> -->
+	</body>
+</html>
